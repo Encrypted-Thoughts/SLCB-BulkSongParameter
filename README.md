@@ -9,7 +9,7 @@ This script was built for use with Streamlabs Chatbot.
 Follow instructions on how to install custom script packs at:
 https://github.com/StreamlabsSupport/Streamlabs-Chatbot/wiki/Prepare-&-Import-Scripts
 
-Click [Here](https://github.com/Encrypted-Thoughts/SLCB-BulkSongParameter/releases/download/v1.0/BulkSongParameter.zip) to download the script pack.
+Click [Here](https://github.com/Encrypted-Thoughts/SLCB-BulkSongParameter/releases/download/v1.1/BulkSongParameter.zip) to download the script pack.
 
 ## Use
 
