@@ -5,7 +5,7 @@
 		"label": "open readme",
 		"tooltip": "read this!",
 		"wsevent": "",
-		"function": "openreadme",
+		"function": "OpenReadme",
 		"group": ""
 	},
 	"EnableDebug": {

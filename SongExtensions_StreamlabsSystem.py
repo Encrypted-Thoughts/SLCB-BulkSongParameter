@@ -88,6 +88,9 @@ def Parse(parseString, userid, username, targetid, targetname, message):
             playlist = list(songManager.PlayList)
             songQueue = list(songManager.SongList)
 
+            if ScriptSettings.EnableDebug:
+                SavePlaylistToFile()
+
             with open(filePath) as f:
                 content = f.readlines()
             for data in content:
@@ -120,5 +123,15 @@ def Unload():
 def ScriptToggled(state):
     return
 
-def openreadme():
+def OpenReadme():
     os.startfile(ReadMe)
+
+def SavePlaylistToFile():
+    songManager = AnkhBotR2.Managers.GlobalManager.Instance.SongCom
+    playlist = list(songManager.PlayList)
+
+    file = os.path.join(os.path.dirname(__file__), "Playlist.csv")
+    Parent.Log(ScriptName, file)
+    with open(file, 'w') as f:
+        for song in playlist:
+            f.write(str(song.Title) + "\n")
